@@ -1,0 +1,10 @@
+<div id="root">
+  <h1>Meine Todos</h1>
+  <p>offene Todos: {{offeneTodos}}</p>
+  <div>
+    <input [(ngModel)]="newTodo">
+    <button (click)="countOffeneTodos()">add</button>
+  </div>
+  <p>{{newTodo}}</p>
+
+</div>
