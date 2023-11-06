@@ -1,0 +1,14 @@
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 8px;
+  gap: 16px;
+}
+
+p{
+  margin: 0px;
+}

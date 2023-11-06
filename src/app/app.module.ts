@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import {FormsModule} from "@angular/forms";
+import { TodoItemComponent } from './todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent
+    ListComponent,
+    TodoItemComponent
   ],
     imports: [
         BrowserModule,

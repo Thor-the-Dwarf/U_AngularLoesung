@@ -5,6 +5,6 @@
     <input [(ngModel)]="newTodo">
     <button (click)="addTodo()">add</button>
   </div>
-  <p *ngFor="let item of data;">{{item.task}}</p>
+  <app-todo-item *ngFor="let item of data;">{{item.task}}</app-todo-item>
 
 </div>
