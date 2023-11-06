@@ -5,6 +5,12 @@
     <input [(ngModel)]="newTodo">
     <button (click)="addTodo()">add</button>
   </div>
-  <app-todo-item *ngFor="let item of data;">{{item.task}}</app-todo-item>
+  <app-todo-item    *ngFor="let item of data; let i = index"
+          [task]="item.task"
+          [done]="item.done"
+
+          (checkBoxClicked)="receiveDone($event, i)"
+
+    >{{item.task}}</app-todo-item>
 
 </div>

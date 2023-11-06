@@ -37,4 +37,9 @@ export class ListComponent {
     }
   }
 
+  receiveDone(event: boolean, i: number){
+    this.data[i].done = event
+    this.countOffeneTodos();
+  }
+
 }

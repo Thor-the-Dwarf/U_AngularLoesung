@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-todo-item',
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent {
-  task: string = "programmieren";
-  done: boolean = false;
+  @Input() task: string = "programmieren";
+  @Input() done: boolean = false;
+  @Output() checkBoxClicked = new EventEmitter<boolean>();
+
+  sendDone(){
+    this.checkBoxClicked.emit(this.done)
+  }
 }
