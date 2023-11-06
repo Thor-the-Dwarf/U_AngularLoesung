@@ -3,8 +3,8 @@
   <p>offene Todos: {{offeneTodos}}</p>
   <div>
     <input [(ngModel)]="newTodo">
-    <button (click)="countOffeneTodos()">add</button>
+    <button (click)="addTodo()">add</button>
   </div>
-  <p>{{newTodo}}</p>
+  <p *ngFor="let item of data;">{{item.task}}</p>
 
 </div>
