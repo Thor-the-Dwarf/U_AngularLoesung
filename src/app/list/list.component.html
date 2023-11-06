@@ -10,6 +10,7 @@
           [done]="item.done"
 
           (checkBoxClicked)="receiveDone($event, i)"
+          (deleteClicked)="receiveDelete(i)"
 
     >{{item.task}}</app-todo-item>
 

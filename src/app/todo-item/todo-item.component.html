@@ -1,6 +1,6 @@
 <!-- todo-item.component.html -->
 <div [style.background-color]="done ? 'green' : 'midnightblue'">
-  <button>delete</button>
+  <button (click)="sendDelete()">delete</button>
   <p>{{task}}</p>
   <input type="checkbox" [(ngModel)]="done" (ngModelChange)="sendDone()"/>
 </div>

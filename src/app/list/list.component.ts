@@ -42,4 +42,9 @@ export class ListComponent {
     this.countOffeneTodos();
   }
 
+  receiveDelete(i: number){
+    this.data.splice(i, 1);
+    this.countOffeneTodos();
+  }
+
 }
